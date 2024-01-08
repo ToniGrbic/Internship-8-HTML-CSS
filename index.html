@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./styles.css
+    "
+      type="text/css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+      }
+      header,
+      footer {
+        color: white;
+        text-align: center;
+      }
+      header {
+        margin-bottom: -8px;
+      }
+      h1 {
+        font-size: 3rem;
+        margin: 0 0 1.38rem 0;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+        margin: 0;
+      }
+      #nav-image {
+        width: 11px;
+        height: 11px;
+        margin-right: 7px;
+        transform: rotate(90deg);
+      }
+      hr {
+        border: 1px solid orange;
+      }
+
+      section {
+        background: rgb(250, 235, 215);
+        border: 10px solid red;
+        padding: 10px;
+      }
+
+      .pink-border {
+        border-color: rgb(237, 45, 215);
+      }
+
+      .turquoise-border {
+        border-color: turquoise;
+      }
+
+      .orange-border {
+        border-color: orange;
+      }
+
+      section p {
+        font-size: 1.5rem;
+      }
+
+      .monospace {
+        font-size: 1.25rem;
+        font-family: monospace;
+        margin: 0;
+      }
+
+      .last-paragraph {
+        margin-bottom: 0;
+      }
+
+      u {
+        text-decoration-color: aqua;
+      }
+
+      footer {
+        height: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML Only</h1>
+
+      <p>
+        <img
+          id="nav-image"
+          src="data:image/png;base64,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"
+        />Navigation
+      </p>
+    </header>
+    <hr />
+    <main>
+      <section class="pink-border">
+        <h2>Section 1</h2>
+        <p class="last-paragraph">
+          This page was inspired by a <span>tweet from Salma</span> . Pretty
+          HTML only pages are difficult to make well, and accessible. But here
+          we are. I'm trying my best.
+        </p>
+      </section>
+      <hr />
+      <section class="turquoise-border">
+        <h2>Section 2</h2>
+        <p>
+          The key to a lot of this is leveraging using tables with a
+          role="presentation" attribute to make decorated sections without css.
+          If you view source on the page, you'll see that there are a LOT of
+          tables. The table tag typically is used to display tabular data and
+          should NOT be used as a layout method. However, since I am not allowed
+          to use CSS, I am pretty much exclusively relying on tables for this
+          purpose. The presentation role tells the browser to not expose the
+          table and its tabluar children in the accessibility tree. This will
+          make it easier to navigate for assistive technology.
+        </p>
+        <p>
+          I'm also leveraging some deprecated HTML elements from HTML 3.2 that
+          you should never use. In order to be "compliant", I've added the HTML
+          3.2 doctype at the top of the page: <br />
+          <span class="monospace"
+            >&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span
+          >
+          <br />
+          This helps give a hint to the browser that we are going to use some
+          older stuff.
+        </p>
+        <p class="last-paragraph">
+          HOWEVER, I'm also using some newer things such as
+          <span class="monospace"
+            >details/summary, section, main, header, and footer</span
+          >. So I'm just making a mess of my doctype and what I should be
+          actually using!
+        </p>
+      </section>
+
+      <hr />
+      <section class="orange-border">
+        <h2>Section 3</h2>
+        <img src="./assets/why-huh.gif" />
+        <p class="last-paragraph">
+          I make terrible things. This was an exciting <u>nerd snipe</u>
+          on a sunday, And I took up the challenge!
+        </p>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Created by <span>Alex Riviere</span></p>
+    </footer>
+  </body>
+</html>
