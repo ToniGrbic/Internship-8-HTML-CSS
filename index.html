@@ -3,21 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="./styles.css
-    "
-      type="text/css"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>HTML and CSS Only</title>
     <style>
       body {
         background-color: black;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
       }
-      p {
-      }
+
       header,
       footer {
         color: white;
@@ -32,8 +26,8 @@
       }
 
       h2 {
-        font-size: 2.2rem;
-        margin: 0;
+        font-size: 2.25rem;
+        margin: 0 0 29.5px 0;
       }
       #nav-image {
         width: 11px;
@@ -48,7 +42,7 @@
       section {
         background: rgb(250, 235, 215);
         border: 10px solid red;
-        padding: 10px;
+        padding: 12px;
       }
 
       .pink-border {
@@ -68,7 +62,7 @@
       }
 
       .monospace {
-        font-size: 1.25rem;
+        font-size: 1.22rem;
         font-family: monospace;
         margin: 0;
       }
@@ -77,12 +71,22 @@
         margin-bottom: 0;
       }
 
+      #gif-img {
+        width: 546px;
+        height: 306px;
+      }
+
       u {
         text-decoration-color: aqua;
+        color: darkblue;
       }
 
       footer {
         height: 60px;
+      }
+
+      #author {
+        color: aqua;
       }
     </style>
   </head>
@@ -101,16 +105,16 @@
     <hr />
     <main>
       <section class="pink-border">
-        <h2>Section 1</h2>
+        <h2>What is this?</h2>
         <p class="last-paragraph">
-          This page was inspired by a <span>tweet from Salma</span> . Pretty
-          HTML only pages are difficult to make well, and accessible. But here
-          we are. I'm trying my best.
+          This page was inspired by a <a href="."><u>tweet from Salma</u></a> .
+          Pretty HTML only pages are difficult to make well, and accessible. But
+          here we are. I'm trying my best.
         </p>
       </section>
       <hr />
       <section class="turquoise-border">
-        <h2>Section 2</h2>
+        <h2>How does this work?</h2>
         <p>
           The key to a lot of this is leveraging using tables with a
           role="presentation" attribute to make decorated sections without css.
@@ -126,8 +130,8 @@
           I'm also leveraging some deprecated HTML elements from HTML 3.2 that
           you should never use. In order to be "compliant", I've added the HTML
           3.2 doctype at the top of the page: <br />
-          <span class="monospace"
-            >&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span
+          <span class="monospace">
+            &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;</span
           >
           <br />
           This helps give a hint to the browser that we are going to use some
@@ -135,26 +139,26 @@
         </p>
         <p class="last-paragraph">
           HOWEVER, I'm also using some newer things such as
-          <span class="monospace"
-            >details/summary, section, main, header, and footer</span
-          >. So I'm just making a mess of my doctype and what I should be
-          actually using!
+          <span class="monospace">details/summary, section, main, header,</span>
+          and <span class="monospace">footer</span>. So I'm just making a mess
+          of my doctype and what I should be actually using!
         </p>
       </section>
 
       <hr />
       <section class="orange-border">
-        <h2>Section 3</h2>
-        <img src="./assets/why-huh.gif" />
+        <h2>But Why?</h2>
+        <img id="gif-img" src="./assets/why-huh.gif" />
         <p class="last-paragraph">
-          I make terrible things. This was an exciting <u>nerd snipe</u>
+          I make terrible things. This was an exciting
+          <a href="."><u>nerd snipe</u></a>
           on a sunday, And I took up the challenge!
         </p>
       </section>
     </main>
     <hr />
     <footer>
-      <p>Created by <span>Alex Riviere</span></p>
+      <p>Created by <a href="." id="author">Alex Riviere</a></p>
     </footer>
   </body>
 </html>
