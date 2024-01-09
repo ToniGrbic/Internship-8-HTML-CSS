@@ -1,1 +1,103 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+header,
+footer {
+  color: white;
+  text-align: center;
+}
+header {
+  margin-bottom: -8px;
+}
+h1 {
+  font-size: 3rem;
+  margin: 0 0 1.3rem 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin: 0 0 29.5px 0;
+}
+#dropdown-image {
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+  transform: rotate(180deg);
+}
+p#dropdown {
+  margin-bottom: 0;
+}
+nav {
+  width: 200px;
+  margin: 0 auto;
+}
+
+ul#navigation {
+  margin-top: 3px;
+  margin-bottom: 35px;
+}
+
+#navigation li {
+  text-align: left;
+}
+
+#navigation li a {
+  color: aqua;
+}
+hr {
+  border: 1px solid orange;
+}
+
+section {
+  background: rgb(250, 235, 215);
+  border: 10px solid red;
+  padding: 12px;
+}
+
+.magenta-border {
+  border-color: magenta;
+}
+
+.aqua-border {
+  border-color: aqua;
+}
+
+.orange-border {
+  border-color: orange;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+.monospace {
+  font-size: 1.22rem;
+  font-family: monospace;
+  margin: 0;
+}
+
+.last-paragraph {
+  margin-bottom: 0;
+}
+
+#gif-img {
+  width: 546px;
+  height: 306px;
+}
+
+u {
+  text-decoration-color: aqua;
+  color: darkblue;
+}
+
+footer {
+  height: 55px;
+  margin-bottom: 0;
+}
+
+#author {
+  color: aqua;
+}
