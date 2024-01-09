@@ -117,14 +117,15 @@
         <h2>How does this work?</h2>
         <p>
           The key to a lot of this is leveraging using tables with a
-          role="presentation" attribute to make decorated sections without css.
-          If you view source on the page, you'll see that there are a LOT of
-          tables. The table tag typically is used to display tabular data and
-          should NOT be used as a layout method. However, since I am not allowed
-          to use CSS, I am pretty much exclusively relying on tables for this
-          purpose. The presentation role tells the browser to not expose the
-          table and its tabluar children in the accessibility tree. This will
-          make it easier to navigate for assistive technology.
+          <span class="monospace">role="presentation"</span> attribute to make
+          decorated sections without css. If you view source on the page, you'll
+          see that there are a LOT of tables. The table tag typically is used to
+          display tabular data and should NOT be used as a layout method.
+          However, since I am not allowed to use CSS, I am pretty much
+          exclusively relying on tables for this purpose. The presentation role
+          tells the browser to not expose the table and its tabluar children in
+          the accessibility tree. This will make it easier to navigate for
+          assistive technology.
         </p>
         <p>
           I'm also leveraging some deprecated HTML elements from HTML 3.2 that
